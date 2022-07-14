@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs')%>
+<ul>
+    <% for(var p of users) { %>
+        <% if(p.name === "ketan"){ %>
+            <li>this is definitely :<%= p.name %></li>
+        <%}else{%>
+            <li>this is definitely not ketan!! This is <%= p.name %></li>
+        <%}%>
+    <% } %>
+</ul>
